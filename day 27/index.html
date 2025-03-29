@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 27 Assignment</title>
+</head>
+<body>
+
+    <p id="first">This is the first paragraph.</p>
+    <p id="second">This is the second paragraph.</p>
+    <p id="third">This is the third paragraph.</p>
+    <p id="fourth">This is the fourth paragraph.</p>
+
+    <script>
+        // 1. Get the first paragraph using querySelector with tag name
+        let firstPara = document.querySelector("p");
+        console.log("First Paragraph:", firstPara.textContent);
+
+        // 2. Get each paragraph using querySelector and their ID
+        let secondPara = document.querySelector("#second");
+        let thirdPara = document.querySelector("#third");
+        let fourthPara = document.querySelector("#fourth");
+
+        console.log("Second Paragraph:", secondPara.textContent);
+        console.log("Third Paragraph:", thirdPara.textContent);
+        console.log("Fourth Paragraph:", fourthPara.textContent);
+
+        // 3. Get all paragraphs as a NodeList
+        let allParagraphs = document.querySelectorAll("p");
+
+        // 4. Loop through and get text content of each paragraph
+        allParagraphs.forEach((para, index) => {
+            console.log(`Paragraph ${index + 1}:`, para.textContent);
+        });
+
+        // 5. Set text content of the fourth paragraph
+        fourthPara.textContent = "Fourth Paragraph";
+
+        // 6. Timer function to show "Time out" after 5 seconds
+        setTimeout(() => {
+            alert("Time out");
+        }, 5000);
+    </script>
+
+</body>
+</html>
