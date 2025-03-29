@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paragraphs Example</title>
+</head>
+<body>
+    <p id="para1">Paragraph 1</p>
+    <p id="para2">Paragraph 2</p>
+    <p id="para3">Paragraph 3</p>
+    <p id="para4">Paragraph 4</p>
+    <script>
+        const firstParagraph = document.querySelector('p');
+        console.log(firstParagraph.textContent);
+
+        console.log(document.querySelector('#para1').textContent);
+        console.log(document.querySelector('#para2').textContent);
+        console.log(document.querySelector('#para3').textContent);
+        console.log(document.querySelector('#para4').textContent);
+    </script>
+</body>
+</html>
